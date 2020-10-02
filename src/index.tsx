@@ -1,2 +1,5 @@
-const log = document.getElementById('log');
-log.innerHTML = 'asdf';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+
+ReactDOM.render(<App />, document.getElementById('root'));
