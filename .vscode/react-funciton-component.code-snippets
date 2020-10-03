@@ -12,15 +12,14 @@
     "body": [
       "import React from 'react';",
       "",
-      "function ${TM_FILENAME_BASE}() {",
-      "  return (",
-      "    <div>",
-      "      ${1:}",
-      "    </div>",
-      "  );",
+      "interface IProps{",
       "}",
-      "",
-      "export default ${TM_FILENAME_BASE};"
+      "export const ${TM_FILENAME_BASE}: React.FC<IProps> = (props) => {",
+      "	return (",
+      "		<${3:div} className='$4'>",
+      "		</${3:div}>",
+      "	)",
+      "}"
     ],
     "description": "Create Functional React Component"
   }
