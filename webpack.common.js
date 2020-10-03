@@ -10,9 +10,13 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './src/dist'),
     filename: 'main.js',
+    publicPath: '/',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    },
   },
   module: {
     rules: [
