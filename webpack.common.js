@@ -29,6 +29,14 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
+        test: /\.s[ac]ss$/i,
+        use: [
+          mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
+          'css-loader',
+          'sass-loader',
+        ],
+      },
+      {
         test: /\.css$/i,
         use: [
           mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
