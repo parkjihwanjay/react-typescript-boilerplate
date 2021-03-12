@@ -11,23 +11,15 @@
     "prefix": "react",
     "body": [
       "import React from 'react';",
-      "import './style.scss'",
       "interface IProps{",
       "}",
-      "export const ${TM_DIRECTORY/^.+\\/(.*)$/$1/}: React.FC<IProps> = (props) => {",
+      "export const ${TM_FILENAME_BASE}: React.FC<IProps> = (props) => {",
       "	return (",
-      "		<div className=''>",
-      "     $1",
-      "		</div>",
+      "		<div></div>",
       "	)",
-      "}"
+      "}",
+      "export default ${TM_FILENAME_BASE}"
     ],
     "description": "Create Functional React Component"
-  },
-  "Create SCSS File": {
-    // "scope": "tsx",
-    "prefix": "scss",
-    "body": ["@import '@/styles/packages';", ""],
-    "description": "Create SCSS File"
   }
 }
